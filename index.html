@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Study Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>📚 Smart Study Planner</h1>
+      <p>Create, track and manage your study goals — saved locally in your browser.</p>
+    </header>
+
+    <section class="form-section">
+      <form id="taskForm">
+        <input type="text" id="title" placeholder="Task title (e.g. Read Chapter 4)" required>
+        <select id="priority">
+          <option value="Low">Low</option>
+          <option value="Medium" selected>Medium</option>
+          <option value="High">High</option>
+        </select>
+        <input type="datetime-local" id="deadline" required>
+        <input type="number" id="hours" placeholder="Est. hours">
+        <textarea id="description" placeholder="Short description (optional)"></textarea>
+        <div class="form-actions">
+          <button type="submit">Save Task</button>
+          <button type="reset">Clear</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="search-section">
+      <input type="search" id="searchInput" placeholder="Search tasks...">
+    </section>
+
+    <section class="stats">
+      <div id="stats">Tasks: 0 | Pending: 0 | High: 0 | Done: 0 | Progress: 0%</div>
+      <div class="progress">
+        <div id="progressBar"></div>
+      </div>
+    </section>
+
+    <section class="timeline-section">
+      <h2>📅 Timeline</h2>
+      <ul id="timeline"></ul>
+    </section>
+
+    <section class="tasks-section">
+      <h2>📝 Task List</h2>
+      <div id="taskList"></div>
+    </section>
+
+    <footer>
+      <p>Data saved locally • Works offline • Built with HTML/CSS/JS</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
