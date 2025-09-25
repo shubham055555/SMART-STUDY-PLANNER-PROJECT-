@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f6fa;
+  color: #333;
+}
+
+.app {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  margin: 0;
+  color: #2a5298;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+form input, form select, form textarea, form button {
+  padding: 8px;
+  font-size: 14px;
+}
+
+form button {
+  cursor: pointer;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-section {
+  margin: 15px 0;
+}
+
+.stats {
+  margin: 15px 0;
+}
+
+.progress {
+  background: #ddd;
+  border-radius: 5px;
+  height: 10px;
+  margin-top: 5px;
+}
+
+#progressBar {
+  height: 10px;
+  width: 0%;
+  background: #2a5298;
+  border-radius: 5px;
+}
+
+.timeline-section, .tasks-section {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.task {
+  background: #f9f9f9;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 5px;
+}
+
+.task.done {
+  background: #d4edda;
+  text-decoration: line-through;
+}
+
+.task.high {
+  border-left: 4px solid #d9534f;
+}
+
+.task.medium {
+  border-left: 4px solid #f0ad4e;
+}
+
+.task.low {
+  border-left: 4px solid #5bc0de;
+}
+
+.actions {
+  margin-top: 8px;
+}
+
+.actions button {
+  margin-right: 6px;
+  cursor: pointer;
+}
